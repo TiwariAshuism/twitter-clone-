@@ -4,6 +4,7 @@ import 'package:chirper/features/feed/domain/entities/post_entity.dart';
 class FeedRemoteDataSourceImpl implements FeedRemoteDataSource {
   @override
   Future<List<PostEntity>> fetchFeed() async {
+    await Future.delayed(const Duration(seconds: 2));
     List<PostEntity> post = [
       PostEntity(
         id: 1,

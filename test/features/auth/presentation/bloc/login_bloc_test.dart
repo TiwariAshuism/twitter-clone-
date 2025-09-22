@@ -60,7 +60,7 @@ void main() {
         LoginState(status: LoginStatus.loading),
         LoginState(
           status: LoginStatus.failure,
-          error: "Exception: All fields are required",
+          error: "All fields are required",
         ),
       ],
     );
@@ -74,7 +74,7 @@ void main() {
         LoginState(status: LoginStatus.loading),
         LoginState(
           status: LoginStatus.failure,
-          error: "Exception: All fields are required",
+          error: "All fields are required",
         ),
       ],
     );
@@ -87,10 +87,7 @@ void main() {
       ),
       expect: () => const [
         LoginState(status: LoginStatus.loading),
-        LoginState(
-          status: LoginStatus.failure,
-          error: "Exception: Mock login error",
-        ),
+        LoginState(status: LoginStatus.failure, error: "Mock login error"),
       ],
     );
   });

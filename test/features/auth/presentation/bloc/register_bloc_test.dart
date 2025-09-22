@@ -107,7 +107,7 @@ void main() {
         RegisterState(status: RegisterStatus.loading),
         RegisterState(
           status: RegisterStatus.failure,
-          error: "Exception: Mock registration error",
+          error: "Mock registration error",
         ),
       ],
     );

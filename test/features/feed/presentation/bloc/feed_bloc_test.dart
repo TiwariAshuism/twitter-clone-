@@ -95,10 +95,7 @@ void main() {
       act: (bloc) => bloc.add(const FeedFetched()),
       expect: () => const [
         FeedState(status: FeedStatus.loading),
-        FeedState(
-          status: FeedStatus.failure,
-          error: "Exception: Mock repository error",
-        ),
+        FeedState(status: FeedStatus.failure, error: "Mock repository error"),
       ],
     );
 
@@ -108,10 +105,7 @@ void main() {
       act: (bloc) => bloc.add(const FeedRefreshed()),
       expect: () => const [
         FeedState(status: FeedStatus.loading),
-        FeedState(
-          status: FeedStatus.failure,
-          error: "Exception: Mock repository error",
-        ),
+        FeedState(status: FeedStatus.failure, error: "Mock repository error"),
       ],
     );
   });
